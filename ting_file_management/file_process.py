@@ -5,7 +5,7 @@ def process(path_file, instance):
     for file in instance.items:
         if file['nome_do_arquivo'] == path_file:
             return None
-        
+
     dict = {
         'nome_do_arquivo': path_file,
         'qtd_linhas': len(txt_importer(path_file)),
@@ -14,7 +14,6 @@ def process(path_file, instance):
 
     instance.enqueue(dict)
     print(dict)
-    
 
 
 def remove(instance):
